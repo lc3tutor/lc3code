@@ -13,6 +13,8 @@ jobs:
           TARGET_BRANCH: 'codesnips'
         run: |
           python3 tools/codesnips/codesnips.py
+          ls tools/codesnips/
+          ls tools/codesnips/snips
           git stash save
           #files==$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
