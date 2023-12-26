@@ -18,6 +18,7 @@ jobs:
           git fetch
           git checkout $TARGET_BRANCH
           cp -r tools/codesnips/snips/* ./
+          rm tools/codesnips/snips/*
           git add .
           git diff-index --quiet HEAD || git commit -am "deploy files"
           git push origin $TARGET_BRANCH
