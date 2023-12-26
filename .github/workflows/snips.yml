@@ -5,13 +5,13 @@ jobs:
   Copy-Snips:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: copy
         env:
           SRC_FOLDER_PATH: 'lc3os'
           TARGET_BRANCH: 'codesnips'
         run: |
-          files=/lc3os/lc3o.asm
+          files='./lc3os/lc3o.asm'
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@gihub.com'
           git fetch
