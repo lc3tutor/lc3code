@@ -1,5 +1,5 @@
 name: Copy Code Snips
-run-name: ${{ github.actor }}: Copy website code snips.
+run-name: Copy website code snips.
 on: [push]
 jobs:
   Copy-Snips:
