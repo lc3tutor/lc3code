@@ -1,7 +1,0 @@
-reset
-clear
-as user/logicalOR/logicalOR.asm
-as lc3os/lc3os.asm
-ld user/logicalOR/logicalOR.obj
-ld lc3os/lc3os.obj
-continue
