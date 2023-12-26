@@ -4,10 +4,11 @@ import sys
 
 def main():
     root_dir = "../../"
-    snip_dir = "snips/"
+    snip_dir = "./"
     try:
         fp = open("codesnips.txt", "r")
     except:
+        print("Could not open codesnips.txt")
         return
     
     lines = fp.readlines()
@@ -18,6 +19,7 @@ def main():
         try:
             shutil.copyfile(root_dir+line, snip_dir+filename)
         except:
+            print("Issue copying" + line)
             continue
 
     #root_dir_list = os.listdir(root_dir)
