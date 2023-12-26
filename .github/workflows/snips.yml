@@ -13,9 +13,9 @@ jobs:
           TARGET_BRANCH: 'codesnips'
         run: |
           python3 tools/codesnips/codesnips.py
-          ls tools/codesnips/
-          ls tools/codesnips/snips
-          git stash save
+          #ls tools/codesnips/
+          #ls tools/codesnips/snips
+          #git stash save
           #files==$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@gihub.com'
@@ -23,7 +23,8 @@ jobs:
           git checkout $TARGET_BRANCH
           #git checkout ${GITHUB_REF##*/} -- $files
           #cp -r tools/codesnips/snips/* ./
-          git stash pop
+          #git stash pop
           cp -r tools/codesnips/snips/* ./
+          git add .
           git diff-index --quiet HEAD || git commit -am "deploy files"
           git push origin $TARGET_BRANCH
