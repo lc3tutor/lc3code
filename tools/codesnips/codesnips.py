@@ -16,7 +16,7 @@ def main():
         line = line.replace("\n", "")
         filename = line.split("/")[-1]
         try:
-            shutil.copyfile(root_dir+line, root_dir+filename)
+            shutil.copyfile(root_dir+line, snip_dir+filename)
         except:
             continue
 
