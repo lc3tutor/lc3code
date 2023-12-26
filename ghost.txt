@@ -1,0 +1,9 @@
+reset
+clear
+as user/ghost/ghost.asm
+as user/ghost/redghost.asm
+as lc3os/lc3os.asm
+ld lc3os/lc3os.obj
+ld user/ghost/ghost.obj
+ld user/ghost/redghost.obj
+continue
