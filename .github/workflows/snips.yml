@@ -13,6 +13,7 @@ jobs:
           TARGET_BRANCH: 'codesnips'
         run: |
           python3 tools/codesnips/codesnips.py
+          ls -a tools/codesnips/snips/
           files==$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@gihub.com'
