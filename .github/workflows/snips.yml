@@ -22,6 +22,6 @@ jobs:
           #git checkout ${GITHUB_REF##*/} -- $files
           #cp -r tools/codesnips/snips/* ./
           git stash pop
-          cp -r tools/codesnips/* ./
+          cp -r tools/codesnips/snips/* ./
           git diff-index --quiet HEAD || git commit -am "deploy files"
           git push origin $TARGET_BRANCH

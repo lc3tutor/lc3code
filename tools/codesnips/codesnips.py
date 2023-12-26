@@ -3,10 +3,13 @@ import shutil
 import sys
 
 def main():
-    root_dir = "../../"
-    snip_dir = "./"
+    root_dir = "./"
+    snip_dir = "tools/codesnips/snips/"
+    if (not os.path.exists(snip_dir)):
+        os.makedirs(snip_dir)
+
     try:
-        fp = open("codesnips.txt", "r")
+        fp = open("tools/codesnips/codesnips.txt", "r")
     except:
         print("Could not open codesnips.txt")
         return
@@ -21,9 +24,6 @@ def main():
         except:
             print("Issue copying" + line)
             continue
-
-    #root_dir_list = os.listdir(root_dir)
-    #user_dir_list = os.listdir(user_dir)
     
     return    
 

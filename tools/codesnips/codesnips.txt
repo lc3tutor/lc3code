@@ -1,4 +1,4 @@
-lc3os.asm
+lc3os/lc3os.asm
 user/hello/hello.asm
 user/bin2str/bin2str.asm
 user/ghost/ghost.asm
