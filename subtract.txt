@@ -1,0 +1,7 @@
+reset
+clear
+as user/subtract/subtract.asm
+as lc3os/lc3os.asm
+ld user/subtract/subtract.obj
+ld lc3os/lc3os.obj
+continue
