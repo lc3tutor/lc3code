@@ -2,14 +2,14 @@
 // Scope level 0:
 //	Symbol Name       Page Address
 //	----------------  ------------
-//	ROW_OFFSET        3013
-//	WIDTH             3012
-//	GD_START          300F
-//	OUTER_LOOP        3004
-//	LOOP_BREAK        300E
-//	INNER_LOOP        3005
-//	HEIGHT            3011
-//	COLOR_RED         3010
+//	ROW_OFFSET        3012
+//	WIDTH             3011
+//	GD_START          300E
+//	OUTER_LOOP        3003
+//	LOOP_BREAK        300D
+//	INNER_LOOP        3004
+//	HEIGHT            3010
+//	COLOR_RED         300F
 //	$               3000
 //	$               3001
 //	$               3002
@@ -24,5 +24,4 @@
 //	$               300B
 //	$               300C
 //	$               300D
-//	$               300E
 
