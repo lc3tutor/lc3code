@@ -1,0 +1,7 @@
+reset
+clear
+as user/redbox/redbox.asm
+as lc3os/lc3os.asm
+ld lc3os/lc3os.obj
+ld user/redbox/redbox.obj
+continue
